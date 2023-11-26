@@ -24,12 +24,12 @@ if (playGame) {
                 : `playerOne: ${playerOne}\nComputer: ${computer}\nplayerOne wins!`;
             alert(result);
             let playAgain = confirm("Play again?");
-            playAgain ? location.reload() : alert("Ok, thanks for playing!")
+            playAgain ? location.reload() : alert("Ok, thanks for playing!");
         } else {
             alert("You did not enter rock, paper or scissors.");
         }
     } else {
-        alert("I guess you changed your mind. Maybe next time.")
+        alert("I guess you changed your mind. Maybe next time.");
     }
 } else {
     alert("Ok, maybe next time.");
