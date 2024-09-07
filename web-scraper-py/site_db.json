@@ -1,0 +1,19 @@
+{
+    "Royal_Canin_Sterilized_plic": {
+        "Zooplus": {
+            "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/royal_canin/sterilised/317623?activeVariant=317623.16",
+            "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 24"
+        },
+        "Petmart": {
+            "url": "https://www.petmart.ro/royal-canin-sterilised-adult-hrana-umeda-pisica-sterilizata-in-sos-85-g.html",
+            "price_xpath": "/html/body/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/form/div[2]/div[1]/div[1]/div[1]/span/span",
+            "price":  "priceTemp.get_property('innerHTML').split('&nbsp;')[0].replace(',', '.')"
+        },
+        "Petissimo": {
+            "url": "https://www.petissimo.ro/pisici/hrana-umeda-conserve/royal-canin/royal-canin-fhn-wet-sterilised.html/ro",
+            "price_xpath": "/html/body/section/div/div/div[3]/div/form/div[4]/div/div[2]/span[2]/span/span[2]",
+            "price":  "float(priceTemp.get_property('innerHTML')) / 12"
+        }
+    }
+}
