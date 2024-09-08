@@ -1,6 +1,8 @@
 import json
+import time
 
 from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
 
 with open('/home/alxlazar/Projects/alxlazar-personal-projects-core-dev/web-scraper-py/site_db.json') as data_file:
     data = json.load(data_file)
@@ -11,11 +13,16 @@ with open('/home/alxlazar/Projects/alxlazar-personal-projects-core-dev/web-scrap
         minPrice = 100.0
         for siteName, siteData in productData.items():
             print(f"  {siteName}")
-            driver = webdriver.Firefox()
-            driver.get(siteData['url'])
-
+            options = FirefoxOptions()
+            options.add_argument("-headless")
+            options.add_argument('--disable-blink-features=AutomationControlled')
+            with webdriver.Firefox(options=options) as driver:
+                driver.implicitly_wait(5)
+                driver.get(siteData['url'])
+                
             path = siteData['price_xpath']
             priceTemp = driver.find_element('xpath', path)
+            time.sleep(2)
             price = eval(siteData['price'])
 
             if(float(price) < float(minPrice)):

@@ -1,5 +1,5 @@
 {
-    "Royal_Canin_Sterilized_plic": {
+    "Royal Canin Sterilized plic": {
         "Zooplus": {
             "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/royal_canin/sterilised/317623?activeVariant=317623.16",
             "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
@@ -14,6 +14,95 @@
             "url": "https://www.petissimo.ro/pisici/hrana-umeda-conserve/royal-canin/royal-canin-fhn-wet-sterilised.html/ro",
             "price_xpath": "/html/body/section/div/div/div[3]/div/form/div[4]/div/div[2]/span[2]/span/span[2]",
             "price":  "float(priceTemp.get_property('innerHTML')) / 12"
+        },
+        "Shop4pet": {
+            "url": "https://www.shop4pet.ro/royal-pisici-sterilizate-12-plicuri?gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-IBp7sRk_SMkAWDrMur3S65hekPELAZ-C-w2TbNz1ISCDEyA6LFhlIaAiAAEALw_wcB",
+            "price_xpath": "/html/body/div[4]/div[1]/div/div/div[1]/div[2]/div[2]/div[6]/div/div/div[2]",
+            "price":  "float(priceTemp.get_property('innerHTML').split('L')[0]) / 12"
+        },
+        "PetPal": {
+            "url": "https://www.petpal.ro/royal-canin-sterilised-in-gravy-12x85g.html?gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-IKINE_-238BnNhr_jJA8jZ4r0v3lX9iX8yUO6mtYyBPHhzrA5_j9saAouwEALw_wcB",
+            "price_xpath": "/html/body/div[2]/div[2]/div[3]/div[1]/div[1]/div[3]/span/span[1]",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "LilPet": {
+            "url": "https://www.lilpet.ro/royal-canin-sterilised-adult-hran%C4%83-umed%C4%83-pisici-sterilizate-%C3%AEn-sos-12-x-85-g.html?gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-JpHYtOWMMHWka9H7Uo8K9tRhI9yzumxg7p9UU-frvAse1ZCDup9EgaArabEALw_wcB",
+            "price_xpath": "/html/body/div[2]/div[3]/div[3]/div[1]/div[1]/div[3]/span/span[1]",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "AbcZoo": {
+            "url": "https://abc-zoo.ro/25312-royal-canin-sterilised-12-x-85-g-in-pung-de-aluminiu.html?gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-Ky3WdoKSd9PSyWHfzjrUad8jzZt_aHXSRJ64SvDdHMfu9s2ShVZT8aAtb5EALw_wcB",
+            "price_xpath": "//*[@id='our_price_display']",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "Hornbach": {
+            "url": "https://www.hornbach.ro/p/hrana-umeda-pentru-pisici-royal-canin-sterilised-adult-sterilizata-in-sos-4x85-g-promo-31/8841330/?wt_mc=ro.paid.sea.google.alwayson_assortment.alle.google_shopping-PMAX...&gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-IXB1P2Hg5Cpu04F2zkGuZ-tw543FtAGA8SJEBaxKLpmCh7kjYQnZMaAryyEALw_wcB",
+            "price_xpath": "/html/body/div[3]/div/main/div[2]/div[1]/section/section/div[2]/div/div/span",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 4"
+        }
+    },
+    "Royal Canin Urinary plic": {
+        "Zooplus": {
+            "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/royal_canin/urinary/496187?origin=hopps&q=royal+canin+urinary&i=5&ro=20&activeVariant=496187.5",
+            "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 24"
+        },
+        "Petmart": {
+            "url": "https://www.petmart.ro/royal-canin-urinary-care-adult-hrana-umeda-pisica-sanatatea-tractului-urinar-in-sos-85-g.html",
+            "price_xpath": "/html/body/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/form/div[2]/div[1]/div[1]/div[1]/span/span",
+            "price":  "priceTemp.get_property('innerHTML').split('&nbsp;')[0].replace(',', '.')"
+        },
+        "Petissimo": {
+            "url": "https://www.petissimo.ro/pisici/hrana-umeda-conserve/royal-canin/royal-canin-urinary-care.html/ro",
+            "price_xpath": "/html/body/section/div/div/div[3]/div/form/div[4]/div/div[2]/span[2]/span/span[2]",
+            "price":  "float(priceTemp.get_property('innerHTML')) / 12"
+        },
+        "Shop4pet": {
+            "url": "https://www.shop4pet.ro/royal-pisici-urinary-plic",
+            "price_xpath": "/html/body/div[4]/div[1]/div/div/div[1]/div[2]/div[2]/div[6]/div/div/div[2]",
+            "price":  "float(priceTemp.get_property('innerHTML').split('L')[0]) / 12"
+        },
+        "PetPal": {
+            "url": "https://www.petpal.ro/pisica-adult-17/royal-canin-urinary-care-12x85g.html",
+            "price_xpath": "/html/body/div[2]/div[2]/div[3]/div[1]/div[1]/div[3]/span/span[1]",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "LilPet": {
+            "url": "https://www.lilpet.ro/promo%C8%9Bii-9/royal-canin-feline-urinary-care-hran%C4%83-umed%C4%83-pisici-adulte-s%C4%83n%C4%83tatea-tractului-urinar-12x85-g.html",
+            "price_xpath": "/html/body/div[2]/div[3]/div[3]/div[1]/div[1]/div[3]/span/span[1]",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "Hornbach": {
+            "url": "https://www.hornbach.ro/p/hrana-umeda-pentru-pisici-royal-canin-urinary-care-85-g/5810913/",
+            "price_xpath": "/html/body/div[3]/div/main/div[2]/div[1]/section/section/div[2]/div/div/span",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.'))"
+        }
+    },
+    "Royal Canin Hair & Skin plic": {
+        "Zooplus": {
+            "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/royal_canin/hair_skin/243532?origin=hopps&q=royal+canin+hair&i=2&ro=20&activeVariant=243532.13",
+            "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 24"
+        },
+        "Petmart": {
+            "url": "https://www.petmart.ro/royal-canin-hair-skin-care-adult-hrana-umeda-pisica-piele-si-blana-in-sos-85-g.html",
+            "price_xpath": "/html/body/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/form/div[2]/div[1]/div[1]/div[1]/span/span",
+            "price":  "priceTemp.get_property('innerHTML').split('&nbsp;')[0].replace(',', '.')"
+        },
+        "Shop4pet": {
+            "url": "https://www.shop4pet.ro/royal-canin-hair-skin-plic-pisica",
+            "price_xpath": "/html/body/div[4]/div[1]/div/div/div[1]/div[2]/div[2]/div[5]/div/div/div",
+            "price":  "float(priceTemp.get_property('innerHTML').split('L')[0]) / 12"
+        },
+        "PetPal": {
+            "url": "https://www.petpal.ro/pisica-adult-17/fcn-hair-skin-gravy-12x85g.html",
+            "price_xpath": "/html/body/div[2]/div[2]/div[3]/div[1]/div[1]/div[3]/span/span[1]",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "AbcZoo": {
+            "url": "https://abc-zoo.ro/38630-royal-canin-intense-beauty-12-x-85g-hrana-in-punga-de-aluminiu.html?_gl=1*1653noo*_up*MQ..&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-Ky3WdoKSd9PSyWHfzjrUad8jzZt_aHXSRJ64SvDdHMfu9s2ShVZT8aAtb5EALw_wcB",
+            "price_xpath": "//*[@id='our_price_display']",
+            "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
         }
     }
 }
