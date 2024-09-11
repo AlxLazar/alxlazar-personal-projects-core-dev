@@ -104,5 +104,12 @@
             "price_xpath": "//*[@id='our_price_display']",
             "price":  "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
         }
+    },
+    "Felix Fantastic ton/somon/cod/cambula": {
+        "Zooplus": {
+            "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/felix/fantastic_gelatina/620612?variantId=620612.19&gad_source=1&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwMTcmQb6e6BvMJpNQ6nRJVTvYTFiRQADndvXXA3z-QsceNMWO_Sv0hoCNiMQAvD_BwE&activeVariant=620612.19",
+            "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 120"
+        }
     }
 }
