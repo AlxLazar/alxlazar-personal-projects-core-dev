@@ -110,6 +110,43 @@
             "url": "https://www.zooplus.ro/shop/pisici/hrana_umeda_pisici/felix/fantastic_gelatina/620612?variantId=620612.19&gad_source=1&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwMTcmQb6e6BvMJpNQ6nRJVTvYTFiRQADndvXXA3z-QsceNMWO_Sv0hoCNiMQAvD_BwE&activeVariant=620612.19",
             "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[2]/div/fieldset/div[1]/label/span/span/span[2]/div/div/span",
             "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 120"
+        },
+        "Petissimo": {
+            "url": "https://www.petissimo.ro/pisici/hrana-umeda-conserve/felix/felix-fantastic-bucati-in-jeleu-multipack-peste.html/ro",
+            "price_xpath": "/html/body/section/div/div/div[3]/div/form/div[4]/div/div[2]/span[2]/span/span[2]",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "Hornbach": {
+            "url": "https://www.hornbach.ro/p/hrana-umeda-pentru-pisici-purina-felix-fantastic-cu-ton-somon-cod-peste-cambula-in-aspic-12x85g/10536159/?srsltid=AfmBOoow9AJCV51RDMN9ddPDoL4tMQF0rNVPDjvHhC9R1JaVaTgvrhns",
+            "price_xpath": "/html/body/div[3]/div/main/div[2]/div[1]/section/section/div[2]/div/div/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "Maxi-Pet": {
+            "url": "https://maxi-pet.ro/products/felix-fantastic-pachet-plicuri-pt-pisici-cu-ton-somon-cod-si-cambula-12x85g?srsltid=AfmBOoonZTz2mVwzDlNpQ985g-vHyWxwrgiBWmnRWi4x7Hs1R7okY1YY",
+            "price_xpath": "/html/body/main/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div/div[1]/span",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        }
+    },
+    "Royal Canin Outdoor": {
+        "Zooplus": {
+            "url": "https://www.zooplus.ro/shop/pisici/hrana_uscata_pisici/royal_canin_feline/health_outdoor/243194?utm_source=google&utm_medium=google_pmax&utm_campaign=21506507663&utm_term=pmaxnofeed&utm_content=21506507663&utm_id=21506507663_21506507663&mkt_source=2230240&gad_source=1&gclid=CjwKCAjwxY-3BhAuEiwAu7Y6s12N8gEAQIC32xm0CYqenDWCMCBaEODjSpP59h0JzQ4QsorjfMRFGhoCfeAQAvD_BwE&activeVariant=243194.21",
+            "price_xpath": "/html/body/div[1]/div/div[1]/div[2]/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div[1]/span[1]/div/div[2]/span[2]",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 12"
+        },
+        "Fera": {
+            "url": "https://fera.ro/royal-canin-outdoor-30-hrana-uscata-pentru-pisicile-adulte-care-ies-afara-4-kg.html",
+            "price_xpath": "//*[@id='sec_discounted_price_4675']",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 4"
+        },
+        "AbcZoo": {
+            "url": "https://abc-zoo.ro/16302-royal-canin-outdoor-30-10kg.html",
+            "price_xpath": "//*[@id='our_price_display']",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 10"
+        },
+        "Petissimo": {
+            "url": "https://www.petissimo.ro/pisici/hrana-uscata/royal-canin/royal-canin-outdoor-30.html/ro",
+            "price_xpath": "/html/body/section/div/div/div[3]/div/form/div[4]/div[1]/div[2]/span[2]/span[1]/span[2]",
+            "price": "float(priceTemp.get_property('innerHTML').split(' ')[0].replace(',', '.')) / 10"
         }
     }
 }

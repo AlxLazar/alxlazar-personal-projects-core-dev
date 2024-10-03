@@ -23,7 +23,7 @@ with open('/home/alxlazar/Projects/alxlazar-personal-projects-core-dev/web-scrap
             options.add_argument('--disable-blink-features=AutomationControlled')
             with webdriver.Firefox(options=options) as driver:
                 try:
-                    # driver.implicitly_wait(5)
+                    # driver.implicitly_wait(5)  
                     driver.get(siteData['url'])
                     WebDriverWait(driver, 10).until(
                         EC.presence_of_element_located((By.TAG_NAME, "h1"))
